@@ -1,0 +1,23 @@
+package Lec5_Loops;
+
+import java.util.*;
+import java.util.Scanner;
+
+public class Exercise4 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhap so thuc (1-100):");
+        double b = scanner.nextDouble();
+        Random random = new Random();
+        double c = random.nextDouble() * (100 - 1) + 1;
+        System.out.println("So thuc ngau nhien la:" + c);
+        if (b > c) {
+            System.out.print("so thuc lon hon so ngau nhien");
+        } else if (b < c) {
+            System.out.print("so thuc be hon so ngau nhien");
+        } else {
+            System.out.print("so thuc bang so ngau nhien");
+        }
+    }
+}
