@@ -1,0 +1,28 @@
+package Lec5_Loops;
+
+import java.util.*;
+import java.util.Scanner;
+
+public class Exercise5 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        int soNgaunhien = random.nextInt(10) + 1;
+        System.out.println("So ngau nhien la:" + soNgaunhien);
+        int soNhap;
+        int dem = 0;
+        while (true) {
+            System.out.print("Nhap so nguyen(1-10):");
+            soNhap = scanner.nextInt();
+            dem++;
+            System.out.println("so lan nhap:" + dem);
+            if (soNhap == soNgaunhien) {
+                break;
+            } else {
+                System.out.println("Sai");
+            }
+        }
+        System.out.println("Dung");
+    }
+}
